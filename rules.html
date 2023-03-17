@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pig-Game-Rules</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #d13a3a, #7f2286);
+            height: 100vh;
+            align-items: center;
+            /* font-family: 'Nunito', sans-serif; */
+            font-family: 'Roboto', sans-serif;
+            font-weight: 600;
+        }
+
+        #home {
+            position: absolute;
+            top: 1rem;
+            right: 2rem;
+        }
+
+        #home a {
+            color: #dbdbdb;
+            font-weight: 300;
+            text-decoration: none;
+        }
+
+        #home a:hover {
+            color: #fff;
+            transition-delay: 0.2s;
+        }
+
+        .rules-title {
+            display: block;
+            text-align: center;
+            margin-top: 10rem;
+            margin-bottom: 5rem;
+            color: aqua;
+        }
+
+        .game-rules {
+            display: block;
+            border: 2px solid;
+            width: 80%;
+            margin: auto;
+            padding: 2rem;
+            color: #fff;
+        }
+    </style>
+
+</head>
+
+<body>
+    <span id="home"><a href="index.html">Home</a></span>
+    <h2 class="rules-title">Pig Game Rules</h2>
+
+    <div class="game-rules">
+        <p> 1. To start the game first click on the 'ROLL DICE' button, it will roll random dice number which is
+            calculated and shows in 'Current' section.</p>
+
+        <p> 2. If you want to hold the current score then press on 'HOLD' button, it will save the score in current
+            'PLAYER' section and current player will change.</p>
+
+        <p> 3. You can increase your score by rolling the dice many times but if the dice number shows 1 then Current
+            score will reset and moved to next player. </p>
+            <!-- so before getting the value 1 HOLD the current score.  -->
+
+        <p> 4. Which player will reach 100 score he will be the winner of this game.</p>
+
+        <p> 5. You can reset the game by click on 'NEW GAME' button.</p>
+    
+    </div>
+</body>
+
+</html>
