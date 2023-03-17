@@ -79,7 +79,8 @@ holdBtn.addEventListener('click', function () {
             playing = false; // user no longer able to play the game
             document.querySelector(`.player--${activePlayer}`).classList.add('player--winner');
             document.querySelector(`.player--${activePlayer}`).classList.remove('player--active');
-            // document.getElementById(`score--${activePlayer}`).textContent = "Has won the game";
+            document.getElementById(`score--${activePlayer}`).textContent = "Has won the game";
+            document.getElementById(`score--${activePlayer}`).style.fontSize = "2.2rem";
             dice.classList.add('hidden');
 
         } else {
