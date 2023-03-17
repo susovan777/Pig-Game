@@ -18,6 +18,35 @@ body {
     font-weight: 600;
 }
 
+#rules {
+    /* display: inline-block; */
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+}
+
+#rules::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+#rules:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+#rules a {
+    color: rgb(207, 207, 207);
+    font-weight: 400;
+    text-decoration: none;
+}
+
 main {
     position: relative;
     display: flex;
